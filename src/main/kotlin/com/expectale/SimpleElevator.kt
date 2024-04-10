@@ -2,7 +2,7 @@ package com.expectale
 
 import xyz.xenondevs.nova.addon.Addon
 
-object ExampleAddon : Addon() {
+object SimpleElevator : Addon() {
     
     override fun init() {
         // Called when the addon is initialized.
