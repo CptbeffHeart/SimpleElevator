@@ -1,4 +1,4 @@
-package com.example
+package com.expectale
 
 import xyz.xenondevs.nova.addon.Addon
 
