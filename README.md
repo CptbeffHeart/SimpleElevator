@@ -1,5 +1,5 @@
-# Nova-Addon-Template
-Template for creating Nova addons
+# Simple Elevator - Nova Addon
+[Nova](https://github.com/xenondevs/Nova) addon which adds elevator block to teleport the player up and down
 
-# Create your own Nova addon
-Visit [our documentation](https://xenondevs.xyz/docs/nova/addon/) for a guide on how to create Nova addons
+# How to use
+To use them place two or more elevators in the same X and Z coordinates, to move between them simply jump to go to the elevator above or sneak to go to the one below.
