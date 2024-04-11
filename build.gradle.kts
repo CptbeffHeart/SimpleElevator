@@ -1,4 +1,3 @@
-import org.gradle.configurationcache.extensions.capitalized
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 group = "com.expectale"
@@ -25,8 +24,8 @@ dependencies {
 }
 
 addon {
-    id.set(project.name)
-    name.set(project.name.capitalized())
+    id.set("simple_elevator")
+    name.set("Simple-Elevator")
     version.set(project.version.toString())
     novaVersion.set(libs.versions.nova)
     main.set("com.expectale.SimpleElevator")
