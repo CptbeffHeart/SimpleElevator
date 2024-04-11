@@ -1,6 +1,6 @@
-logistics:
-  icon: logistics:ultimate_power_cell
-  name: menu.logistics.items.category.logistics
-  priority: 2
+misc:
+  icon: nova:wrench
+  name: menu.nova.items.category.misc
+  priority: 5
   items:
     - simple_elevator:white_elevator
