@@ -1,0 +1,6 @@
+logistics:
+  icon: logistics:ultimate_power_cell
+  name: menu.logistics.items.category.logistics
+  priority: 2
+  items:
+    - simple_elevator:white_elevator

@@ -1,0 +1,12 @@
+{
+  "result": "nova:white_elevator",
+  "shape": [
+    "www",
+    "wpw",
+    "www"
+  ],
+  "ingredients": {
+    "w": "minecraft:white_wool",
+    "p": "minecraft:ender_pearl"
+  }
+}
