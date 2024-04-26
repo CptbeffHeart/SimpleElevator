@@ -1,0 +1,26 @@
+{
+  "result": "nova:magenta_elevator",
+  "shape": [
+    "de"
+  ],
+  "ingredients": {
+    "e": [
+      "nova:black_elevator",
+      "nova:blue_elevator",
+      "nova:brown_elevator",
+      "nova:cyan_elevator",
+      "nova:gray_elevator",
+      "nova:green_elevator",
+      "nova:light_blue_elevator",
+      "nova:light_gray_elevator",
+      "nova:lime_elevator",
+      "nova:orange_elevator",
+      "nova:pink_elevator",
+      "nova:purple_elevator",
+      "nova:red_elevator",
+      "nova:white_elevator",
+      "nova:yellow_elevator"
+    ],
+    "d": "minecraft:magenta_dye"
+  }
+}
