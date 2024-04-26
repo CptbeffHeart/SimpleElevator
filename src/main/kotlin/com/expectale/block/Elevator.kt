@@ -18,6 +18,25 @@ import xyz.xenondevs.nova.util.registerEvents
 import xyz.xenondevs.nova.world.block.BlockManager
 import xyz.xenondevs.nova.world.pos
 
+val ELEVATORS = listOf(
+    Blocks.BLACK_ELEVATOR,
+    Blocks.BLUE_ELEVATOR,
+    Blocks.BROWN_ELEVATOR,
+    Blocks.CYAN_ELEVATOR,
+    Blocks.GRAY_ELEVATOR,
+    Blocks.GREEN_ELEVATOR,
+    Blocks.LIGHT_BLUE_ELEVATOR,
+    Blocks.LIGHT_GRAY_ELEVATOR,
+    Blocks.LIME_ELEVATOR,
+    Blocks.MAGENTA_ELEVATOR,
+    Blocks.ORANGE_ELEVATOR,
+    Blocks.PINK_ELEVATOR,
+    Blocks.PURPLE_ELEVATOR,
+    Blocks.RED_ELEVATOR,
+    Blocks.WHITE_ELEVATOR,
+    Blocks.YELLOW_ELEVATOR
+)
+
 @Init(stage = InitStage.POST_WORLD)
 object Elevator: Listener {
     
@@ -64,7 +83,7 @@ object Elevator: Listener {
     
     private fun isBlockElevator(location: Location): Boolean {
         val blockState = BlockManager.getBlockState(location.pos) ?: return false
-        return blockState.block == Blocks.WHITE_ELEVATOR
+        return ELEVATORS.contains(blockState.block)
     }
     
     private fun spaceForPlayer(location: Location): Boolean {
