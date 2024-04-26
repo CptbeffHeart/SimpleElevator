@@ -1,3 +1,18 @@
 {
-  "block.simple_elevator.white_elevator": "Elevator"
+  "block.simple_elevator.black_elevator": "Black Elevator",
+  "block.simple_elevator.blue_elevator": "Blue Elevator",
+  "block.simple_elevator.brown_elevator": "Brown Elevator",
+  "block.simple_elevator.cyan_elevator": "Cyan Elevator",
+  "block.simple_elevator.gray_elevator": "Gray Elevator",
+  "block.simple_elevator.green_elevator": "Green Elevator",
+  "block.simple_elevator.light_blue_elevator": "Light Blue Elevator",
+  "block.simple_elevator.light_gray_elevator": "Light Gray Elevator",
+  "block.simple_elevator.lime_elevator": "Lime Elevator",
+  "block.simple_elevator.magenta_elevator": "Magenta Elevator",
+  "block.simple_elevator.orange_elevator": "Orange Elevator",
+  "block.simple_elevator.pink_elevator": "Pink Elevator",
+  "block.simple_elevator.purple_elevator": "Purple Elevator",
+  "block.simple_elevator.red_elevator": "Red Elevator",
+  "block.simple_elevator.white_elevator": "White Elevator",
+  "block.simple_elevator.yellow_elevator": "Yellow Elevator"
 }
