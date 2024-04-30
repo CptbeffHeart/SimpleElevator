@@ -18,6 +18,10 @@
 # How to use
 To use them place two or more elevators in the same X and Z coordinates, to move between them simply jump to go to the elevator above or sneak to go to the one below.
 
+# Install
+Add the latest [nova](https://github.com/xenondevs/Nova) version in your plugin folder, then restart the server.
+Put this addon on the addon folder `plugins/nova/addons`
+
 # Obtain
 The white elevator can be take from the inventory `/nova items` on the `Misc` tab
 </br>
