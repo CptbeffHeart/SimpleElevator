@@ -44,32 +44,58 @@ object Elevator: Listener {
     private fun init() {
         registerEvents()
     }
-    
+
+    /**
+     * On player jump check if he can be teleported upward and then teleport him
+     *
+     * @param event On [PlayerJumpEvent]
+     * @see [crouch] [tpPlayer]
+     * @since 1.0.0
+     * @author CptBeffHeart
+     */
     @EventHandler
     private fun jump(event: PlayerJumpEvent) {
         val location = event.from.clone()
         location.advance(Axis.Y, -1.0)
         if (!isBlockElevator(location)) return
-        
+
         for (y in location.y.toInt() + 1 until location.world.maxHeight) {
             location.y = y.toDouble()
             if (tpPlayer(location, event.player)) return
         }
     }
-    
+
+    /**
+     * On player sneak check if he can be teleported downward and then teleport him
+     *
+     * @param event On [PlayerToggleSneakEvent]
+     * @see [jump] [tpPlayer]
+     * @since 1.0.0
+     * @author CptBeffHeart
+     */
     @EventHandler
     private fun crouch(event: PlayerToggleSneakEvent) {
         if (!event.isSneaking) return
         val location = event.player.location.clone()
         location.advance(Axis.Y, -1.0)
         if (!isBlockElevator(location)) return
-        
+
         for (y in location.y.toInt() - 1 downTo location.world.minHeight) {
             location.y = y.toDouble()
             if (tpPlayer(location, event.player)) return
         }
     }
-    
+
+    /**
+     * Teleport the player if [spaceForPlayer] and if [isBlockElevator]
+     *
+     * @param location [Location] of the player
+     * @param player
+     * @return return false if the player cannot teleport, otherwise true
+     * @since 1.0.0
+     * @author CptBeffHeart
+     * @see [jump] [crouch] [spaceForPlayer] [isBlockElevator]
+     */
     private fun tpPlayer(location: Location, player: Player): Boolean {
         if (!isBlockElevator(location) || !spaceForPlayer(location)) return false
         location.add(0.0, 1.0, 0.0)
@@ -80,12 +106,30 @@ object Elevator: Listener {
         player.playSound(tpLoc, Sound.ENTITY_PLAYER_TELEPORT, 1f, 1f)
         return true
     }
-    
+
+    /**
+     * Check if the block under the player is an elevator
+     *
+     * @param location
+     * @return true if the block is an elevator, false if it isn't
+     * @since 1.0.0
+     * @author CptBeffHeart
+     * @see [tpPlayer]
+     */
     private fun isBlockElevator(location: Location): Boolean {
         val blockState = BlockManager.getBlockState(location.pos) ?: return false
         return ELEVATORS.contains(blockState.block)
     }
-    
+
+    /**
+     * Check if the player can be teleported with enough space to not suffocate
+     *
+     * @param location
+     * @return true if he can be teleported, false otherwise
+     * @since 1.0.0
+     * @author CptBeffHeart
+     * @see [tpPlayer]
+     */
     private fun spaceForPlayer(location: Location): Boolean {
         val loc = location.clone()
         for (i in 0..1) {
