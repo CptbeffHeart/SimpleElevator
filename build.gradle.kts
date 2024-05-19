@@ -10,6 +10,7 @@ plugins {
     alias(libs.plugins.paperweight)
     alias(libs.plugins.nova)
     alias(libs.plugins.stringremapper)
+    id("org.jetbrains.dokka") version "1.9.20"
 }
 
 repositories {
