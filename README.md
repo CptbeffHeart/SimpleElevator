@@ -18,12 +18,6 @@
 # How to use
 To use them place two or more elevators in the same X and Z coordinates, to move between them simply jump to go to the elevator above or sneak to go to the one below.
 
-# Install
-Add the latest [nova](https://github.com/xenondevs/Nova) version in your plugin folder, then restart the server.<br>
-Put this addon on the addon folder `plugins/Nova/addons`
->[!Tip]
-> You can follow the [official nova setup guide](https://xenondevs.xyz/docs/nova/admin/setup/).
-
 # Obtain
 The white elevator can be take from the inventory `/nova items` on the `Misc` tab
 </br>
@@ -34,5 +28,13 @@ The other colors can be obtain with the command `/nova give [player] simple_elev
   <img src="https://github.com/CptbeffHeart/SimpleElevator/assets/51067790/0c0e3460-a8f2-4f88-af21-a1f393aeaadb">
 </p>
 
+# Install
+Add the latest [nova](https://github.com/xenondevs/Nova) version in your plugin folder, then restart the server.<br>
+Put this addon on the addon folder `plugins/Nova/addons`
+>[!Tip]
+> You can follow the [official nova setup guide](https://xenondevs.xyz/docs/nova/admin/setup/).
+
 # Credits
 Textures by Lil Essence (Discord: lilessencelerageulemalandrin)
+>[!Note]
+> All the textures a free to use.
