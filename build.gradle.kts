@@ -9,7 +9,6 @@ plugins {
     alias(libs.plugins.kotlin)
     alias(libs.plugins.paperweight)
     alias(libs.plugins.nova)
-    alias(libs.plugins.stringremapper)
     id("org.jetbrains.dokka") version "1.9.20"
 }
 
@@ -31,11 +30,6 @@ addon {
     novaVersion.set(libs.versions.nova)
     main.set("com.expectale.SimpleElevator")
     authors.add("CptBeffHeart")
-}
-
-remapStrings {
-    remapGoal.set(if (mojangMapped) "mojang" else "spigot")
-    gameVersion.set(libs.versions.paper.get().substringBefore("-"))
 }
 
 tasks {
