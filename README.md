@@ -1,6 +1,7 @@
 <h1 align="center">
-    Simple Elevator - Nova Addon
+    <img src="https://github.com/CptbeffHeart/SimpleElevator/assets/51067790/741324cf-d3ee-4263-a063-21fd9ae4a377">
 </h1>
+
 <p align="center">
   <a href="https://github.com/CptBeffHeart/SimpleElevator/stargazers">
     <img src="https://img.shields.io/github/stars/CptBeffHeart/SimpleElevator">
@@ -8,6 +9,10 @@
   <a href="https://github.com/CptbeffHeart/SimpleElevator/releases">
     <img src="https://img.shields.io/github/downloads/CptbeffHeart/SimpleElevator/total.svg">
   </a>
+</p>
+
+<p align="center">
+  <img src="https://github.com/CptbeffHeart/SimpleElevator/assets/51067790/47b61e93-1a9b-470e-a16b-91ba8f3de952">
 </p>
 
 # Description
