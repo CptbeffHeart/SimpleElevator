@@ -1,18 +1,66 @@
 {
-    "black_elevator": "block/black_elevator",
-    "blue_elevator": "block/blue_elevator",
-    "brown_elevator": "block/brown_elevator",
-    "cyan_elevator": "block/cyan_elevator",
-    "gray_elevator": "block/gray_elevator",
-    "green_elevator": "block/green_elevator",
-    "light_blue_elevator": "block/light_blue_elevator",
-    "light_gray_elevator": "block/light_gray_elevator",
-    "lime_elevator": "block/lime_elevator",
-    "magenta_elevator": "block/magenta_elevator",
-    "orange_elevator": "block/orange_elevator",
-    "pink_elevator": "block/pink_elevator",
-    "purple_elevator": "block/purple_elevator",
-    "red_elevator": "block/red_elevator",
-    "white_elevator": "block/white_elevator",
-    "yellow_elevator": "block/yellow_elevator"
+    "black_elevator": {
+        "item": "block/black_elevator",
+        "block": { "type": "solid" }
+    },
+    "blue_elevator": {
+        "item": "block/blue_elevator",
+        "block": { "type": "solid" }
+    },
+    "brown_elevator": {
+        "item": "block/brown_elevator",
+        "block": { "type": "solid" }
+    },
+    "cyan_elevator": {
+        "item": "block/cyan_elevator",
+        "block": { "type": "solid" }
+    },
+    "gray_elevator": {
+        "item": "block/gray_elevator",
+        "block": { "type": "solid" }
+    },
+    "green_elevator": {
+        "item": "block/green_elevator",
+        "block": { "type": "solid" }
+    },
+    "light_blue_elevator": {
+        "item": "block/light_blue_elevator",
+        "block": { "type": "solid" }
+    },
+    "light_gray_elevator": {
+        "item": "block/light_gray_elevator",
+        "block": { "type": "solid" }
+    },
+    "lime_elevator": {
+        "item": "block/lime_elevator",
+        "block": { "type": "solid" }
+    },
+    "magenta_elevator": {
+        "item": "block/magenta_elevator",
+        "block": { "type": "solid" }
+    },
+    "orange_elevator": {
+        "item": "block/orange_elevator",
+        "block": { "type": "solid" }
+    },
+    "pink_elevator": {
+        "item": "block/pink_elevator",
+        "block": { "type": "solid" }
+    },
+    "purple_elevator": {
+        "item": "block/purple_elevator",
+        "block": { "type": "solid" }
+    },
+    "red_elevator": {
+        "item": "block/red_elevator",
+        "block": { "type": "solid" }
+    },
+    "white_elevator": {
+        "item": "block/white_elevator",
+        "block": { "type": "solid" }
+    },
+    "yellow_elevator": {
+        "item": "block/yellow_elevator",
+        "block": { "type": "solid" }
+    }
 }
