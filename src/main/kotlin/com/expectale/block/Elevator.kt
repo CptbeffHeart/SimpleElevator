@@ -15,7 +15,7 @@ import xyz.xenondevs.nova.initialize.InitStage
 import xyz.xenondevs.nova.util.advance
 import xyz.xenondevs.nova.util.playSoundNearby
 import xyz.xenondevs.nova.util.registerEvents
-import xyz.xenondevs.nova.world.block.BlockManager
+import xyz.xenondevs.nova.world.format.WorldDataManager
 import xyz.xenondevs.nova.world.pos
 
 val ELEVATORS = listOf(
@@ -117,7 +117,7 @@ object Elevator: Listener {
      * @see [tpPlayer]
      */
     private fun isBlockElevator(location: Location): Boolean {
-        val blockState = BlockManager.getBlockState(location.pos) ?: return false
+        val blockState = WorldDataManager.getBlockState(location.pos) ?: return false
         return ELEVATORS.contains(blockState.block)
     }
 

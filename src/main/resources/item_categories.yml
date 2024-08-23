@@ -1,6 +1,0 @@
-misc:
-  icon: nova:wrench
-  name: menu.nova.items.category.misc
-  priority: 5
-  items:
-    - simple_elevator:white_elevator

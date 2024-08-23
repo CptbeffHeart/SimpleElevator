@@ -1,9 +1,8 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 group = "com.expectale"
 version = "2.0.0"
-
-val mojangMapped = project.hasProperty("mojang-mapped")
 
 plugins {
     alias(libs.plugins.kotlin)
@@ -35,22 +34,21 @@ addon {
 tasks {
     register<Copy>("addonJar") {
         group = "build"
-        if (mojangMapped) {
-            dependsOn("jar")
-            from(File(buildDir, "libs/${project.name}-${project.version}-dev.jar"))
-        } else {
-            dependsOn("reobfJar")
-            from(File(buildDir, "libs/${project.name}-${project.version}.jar"))
-        }
-        
-        from(File(project.buildDir, "libs/${project.name}-${project.version}.jar"))
-        into((project.findProperty("outDir") as? String)?.let(::File) ?: project.buildDir)
+        dependsOn("jar")
+        from(File(project.layout.buildDirectory.get().asFile, "libs/${project.name}-${project.version}.jar"))
+        into((project.findProperty("outDir") as? String)?.let(::File) ?: project.layout.buildDirectory.get().asFile)
         rename { "${addonMetadata.get().addonName.get()}-${project.version}.jar" }
     }
     
     withType<KotlinCompile> {
-        kotlinOptions {
-            jvmTarget = "17"
+        compilerOptions {
+            jvmTarget = JvmTarget.JVM_21
         }
+    }
+}
+
+afterEvaluate {
+    tasks.getByName<Jar>("jar") {
+        archiveClassifier = ""
     }
 }
